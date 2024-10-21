@@ -1,0 +1,386 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.6",
+    "jsr:@std/internal@^1.0.4": "1.0.4",
+    "npm:@types/node@*": "22.5.4",
+    "npm:axios@^1.7.7": "1.7.7",
+    "npm:cheerio@1": "1.0.0"
+  },
+  "jsr": {
+    "@std/assert@1.0.6": {
+      "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.4": {
+      "integrity": "62e8e4911527e5e4f307741a795c0b0a9e6958d0b3790716ae71ce085f755422"
+    }
+  },
+  "npm": {
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "asynckit@0.4.0": {
+      "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q=="
+    },
+    "axios@1.7.7": {
+      "integrity": "sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==",
+      "dependencies": [
+        "follow-redirects",
+        "form-data",
+        "proxy-from-env"
+      ]
+    },
+    "boolbase@1.0.0": {
+      "integrity": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
+    },
+    "cheerio-select@2.1.0": {
+      "integrity": "sha512-9v9kG0LvzrlcungtnJtpGNxY+fzECQKhK4EGJX2vByejiMX84MFNQw4UxPJl3bFbTMw+Dfs37XaIkCwTZfLh4g==",
+      "dependencies": [
+        "boolbase",
+        "css-select",
+        "css-what",
+        "domelementtype",
+        "domhandler",
+        "domutils"
+      ]
+    },
+    "cheerio@1.0.0": {
+      "integrity": "sha512-quS9HgjQpdaXOvsZz82Oz7uxtXiy6UIsIQcpBj7HRw2M63Skasm9qlDocAM7jNuaxdhpPU7c4kJN+gA5MCu4ww==",
+      "dependencies": [
+        "cheerio-select",
+        "dom-serializer",
+        "domhandler",
+        "domutils",
+        "encoding-sniffer",
+        "htmlparser2",
+        "parse5",
+        "parse5-htmlparser2-tree-adapter",
+        "parse5-parser-stream",
+        "undici",
+        "whatwg-mimetype"
+      ]
+    },
+    "combined-stream@1.0.8": {
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+      "dependencies": [
+        "delayed-stream"
+      ]
+    },
+    "css-select@5.1.0": {
+      "integrity": "sha512-nwoRF1rvRRnnCqqY7updORDsuqKzqYJ28+oSMaJMMgOauh3fvwHqMS7EZpIPqK8GL+g9mKxF1vP/ZjSeNjEVHg==",
+      "dependencies": [
+        "boolbase",
+        "css-what",
+        "domhandler",
+        "domutils",
+        "nth-check"
+      ]
+    },
+    "css-what@6.1.0": {
+      "integrity": "sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw=="
+    },
+    "delayed-stream@1.0.0": {
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ=="
+    },
+    "dom-serializer@2.0.0": {
+      "integrity": "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==",
+      "dependencies": [
+        "domelementtype",
+        "domhandler",
+        "entities"
+      ]
+    },
+    "domelementtype@2.3.0": {
+      "integrity": "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
+    },
+    "domhandler@5.0.3": {
+      "integrity": "sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==",
+      "dependencies": [
+        "domelementtype"
+      ]
+    },
+    "domutils@3.1.0": {
+      "integrity": "sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==",
+      "dependencies": [
+        "dom-serializer",
+        "domelementtype",
+        "domhandler"
+      ]
+    },
+    "encoding-sniffer@0.2.0": {
+      "integrity": "sha512-ju7Wq1kg04I3HtiYIOrUrdfdDvkyO9s5XM8QAj/bN61Yo/Vb4vgJxy5vi4Yxk01gWHbrofpPtpxM8bKger9jhg==",
+      "dependencies": [
+        "iconv-lite",
+        "whatwg-encoding"
+      ]
+    },
+    "entities@4.5.0": {
+      "integrity": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
+    },
+    "follow-redirects@1.15.9": {
+      "integrity": "sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ=="
+    },
+    "form-data@4.0.1": {
+      "integrity": "sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==",
+      "dependencies": [
+        "asynckit",
+        "combined-stream",
+        "mime-types"
+      ]
+    },
+    "htmlparser2@9.1.0": {
+      "integrity": "sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==",
+      "dependencies": [
+        "domelementtype",
+        "domhandler",
+        "domutils",
+        "entities"
+      ]
+    },
+    "iconv-lite@0.6.3": {
+      "integrity": "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==",
+      "dependencies": [
+        "safer-buffer"
+      ]
+    },
+    "mime-db@1.52.0": {
+      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg=="
+    },
+    "mime-types@2.1.35": {
+      "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "dependencies": [
+        "mime-db"
+      ]
+    },
+    "nth-check@2.1.1": {
+      "integrity": "sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==",
+      "dependencies": [
+        "boolbase"
+      ]
+    },
+    "parse5-htmlparser2-tree-adapter@7.1.0": {
+      "integrity": "sha512-ruw5xyKs6lrpo9x9rCZqZZnIUntICjQAd0Wsmp396Ul9lN/h+ifgVV1x1gZHi8euej6wTfpqX8j+BFQxF0NS/g==",
+      "dependencies": [
+        "domhandler",
+        "parse5"
+      ]
+    },
+    "parse5-parser-stream@7.1.2": {
+      "integrity": "sha512-JyeQc9iwFLn5TbvvqACIF/VXG6abODeB3Fwmv/TGdLk2LfbWkaySGY72at4+Ty7EkPZj854u4CrICqNk2qIbow==",
+      "dependencies": [
+        "parse5"
+      ]
+    },
+    "parse5@7.2.0": {
+      "integrity": "sha512-ZkDsAOcxsUMZ4Lz5fVciOehNcJ+Gb8gTzcA4yl3wnc273BAybYWrQ+Ks/OjCjSEpjvQkDSeZbybK9qj2VHHdGA==",
+      "dependencies": [
+        "entities"
+      ]
+    },
+    "proxy-from-env@1.1.0": {
+      "integrity": "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg=="
+    },
+    "safer-buffer@2.1.2": {
+      "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    },
+    "undici@6.20.1": {
+      "integrity": "sha512-AjQF1QsmqfJys+LXfGTNum+qw4S88CojRInG/6t31W/1fk6G59s92bnAvGz5Cmur+kQv2SURXEvvudLmbrE8QA=="
+    },
+    "whatwg-encoding@3.1.1": {
+      "integrity": "sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==",
+      "dependencies": [
+        "iconv-lite"
+      ]
+    },
+    "whatwg-mimetype@4.0.0": {
+      "integrity": "sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg=="
+    }
+  },
+  "redirects": {
+    "https://deno.land/x/deno_dom/deno-dom-wasm.ts": "https://deno.land/x/deno_dom@v0.1.48/deno-dom-wasm.ts"
+  },
+  "remote": {
+    "https://deno.land/x/deno_dom@v0.1.48/build/deno-wasm/deno-wasm.js": "d6841a06342eb6a2798ef28de79ad69c0f2fa349fa04d3ca45e5fcfbf50a9340",
+    "https://deno.land/x/deno_dom@v0.1.48/deno-dom-wasm.ts": "0669396686fb207f1354af33df6aabe2189b4eceafdb1bf7f3d6bbb2637b6b03",
+    "https://deno.land/x/deno_dom@v0.1.48/src/api.ts": "0ff5790f0a3eeecb4e00b7d8fbfa319b165962cf6d0182a65ba90f158d74f7d7",
+    "https://deno.land/x/deno_dom@v0.1.48/src/constructor-lock.ts": "0e7b297e8b9cf921a3b0d3a692ec5fb462c5afc47ec554292e20090b9e16b40a",
+    "https://deno.land/x/deno_dom@v0.1.48/src/deserialize.ts": "1cf4096678d8afed8ed28dbad690504c4d2c28149ba768b26eacd1416873425b",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/document-fragment.ts": "1c7352a3c816587ed7fad574b42636198f680f17abc3836fcfe7799b31e7718f",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/document.ts": "f8503c0ffe0d703535e84d174f1c30aa31eff15e1450777d7f2e8da81546c002",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/dom-parser.ts": "784ee0e766d4a01e14420f328053fd3a0016c6b40ee442edc3ae80f5d9777927",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/element.ts": "f662dbf28d2ac873ebbbe2d4ae53121d13879c2061416f6eae4e8cca58922e8b",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/elements/html-template-element.ts": "740b97a5378c9a14cccf3429299846eda240b613013e2d2d7f20b393897453c2",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/html-collection.ts": "eedc0b097612ef420d975df6924850a36a4829b35aafa4c92078609a15a52f08",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/node-list.ts": "d19fec8ed4979f43c8e117f9937b3da22acc2c8514cb1ef0074f54793cdfc8c9",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/node.ts": "c93e5f6b6c011cbad6f8728d65459782b911e097f9d0c8c99a51591f7c936449",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/custom-api.ts": "852696bd58e534bc41bd3be9e2250b60b67cd95fd28ed16b1deff1d548531a71",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/nwsapi-types.ts": "c43b36c36acc5d32caabaa54fda8c9d239b2b0fcbce9a28efb93c84aa1021698",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/nwsapi.js": "985d7d8fc1eabbb88946b47a1c44c1b2d4aa79ff23c21424219f1528fa27a2ff",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/selectors.ts": "83eab57be2290fb48e3130533448c93c6c61239f2a2f3b85f1917f80ca0fdc75",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/sizzle-types.ts": "78149e2502409989ce861ed636b813b059e16bc267bb543e7c2b26ef43e4798b",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/selectors/sizzle.js": "c3aed60c1045a106d8e546ac2f85cc82e65f62d9af2f8f515210b9212286682a",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils-types.ts": "96db30e3e4a75b194201bb9fa30988215da7f91b380fca6a5143e51ece2a8436",
+    "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils.ts": "4c6206516fb8f61f37a209c829e812c4f5a183e46d082934dd14c91bde939263",
+    "https://deno.land/x/deno_dom@v0.1.48/src/parser.ts": "e06b2300d693e6ae7564e53dfa5c9a9e97fdb8c044c39c52c8b93b5d60860be3",
+    "https://deno.land/x/evt@v2.3.1/lib/Ctx.ts": "e144f793be50f553465619359267ea08f88982251e816ae57ed1545617f565dd",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.asNonPostable.ts": "0c518f68e873a7912a2c3225f5427cb64085dae6b1a9ad0aa8f677232fd93b98",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.asPostable.ts": "f6e12683d3ab7572fc6d6b62822df4f73a33f206b515486bb14fb93a790fd266",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.asyncPipe.ts": "9e817e60d3583f27aba0951bfe2a816122f237e885912b3d5a7d65d68b618313",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.create.ts": "8789cf94d143f208ea7b26071e37b862b435b422da2e28a697732a8260998c2c",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.factorize.ts": "ed4173ea2b41e187700cd4dbd3e040763a170dfa0530cb6200b5723120b0c7ec",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.from.ts": "9f0e7f41c34396923f60ed73446b309dc7385813ded03c65a19eb45d6d2f26ff",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.getCtx.ts": "bd348a90707eaf277c365c031a25922bd3f3eab9cfc2ff68d192aac4251cb5ca",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.loosenType.ts": "7b5223c86b4661aefa019e3db1cecf2e859a1376c2c243d2fe6c0a797daa962c",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.merge.ts": "0bab6663ea756e929a9f5b7bf1c5c957da00d5b2355f8355b1276c3016654edf",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.newCtx.ts": "bd44ec7e092915b7b32a1e5d8491c0894749624a2b17e1d41c0af39de73abb90",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.parsePropsFromArgs.ts": "4c6232f18ba7abb2059501e86da707f687d71c43e91b551191f2b698eec4a1eb",
+    "https://deno.land/x/evt@v2.3.1/lib/Evt.ts": "9af110b0bfc1f97b1eac823211249915fdd94dc44d0bad3fe2878cd4859c238d",
+    "https://deno.land/x/evt@v2.3.1/lib/LazyEvt.ts": "94ce4c95bf61c878b720d1178fd9abe1fe825f189d7f38e1c3a36afbc14c5dfd",
+    "https://deno.land/x/evt@v2.3.1/lib/LazyStatefulEvt.ts": "85fdf71b4142a00d640d19b2b268ce9749c3b0635a5c98439769de9817a61483",
+    "https://deno.land/x/evt@v2.3.1/lib/StatefulEvt.ts": "9a53c606939f23c496f0a360df56502fef267600afe0399a66aebeca5702eb3d",
+    "https://deno.land/x/evt@v2.3.1/lib/importProxy.ts": "7b252cd136ab26da2661ea6525ec15612b5894c6f141456246ee6da3b42f4361",
+    "https://deno.land/x/evt@v2.3.1/lib/index.ts": "a471b0902a5be7f5c17dfcb06b7affe025c1793dff1c53d509664d83dab5d8ec",
+    "https://deno.land/x/evt@v2.3.1/lib/types/AsyncIterableEvt.ts": "5fd9a5465340547d8e4e40322675a85fbf0c1661d3ea85cc0bd57e2344c0d988",
+    "https://deno.land/x/evt@v2.3.1/lib/types/EventTargetLike.ts": "ad71a00f2369d4d4a4db6a78b5ddf7658e3090c3b0283595a7fbc7a2a5c96b7d",
+    "https://deno.land/x/evt@v2.3.1/lib/types/EvtError.ts": "719ccce37e3b6cf2f79b6d0017e4ecb325ee4ba614d1cc2f6807d48ac7046784",
+    "https://deno.land/x/evt@v2.3.1/lib/types/Handler.ts": "1a83da88f68e5239db7cf90489d9e061912a88c2b80f7dfe98526f27a8dc4727",
+    "https://deno.land/x/evt@v2.3.1/lib/types/Observer.ts": "f0f2c4498bd49558d4f5df981ee4ae2aada687de5cd150e39b06798bf3d23ac0",
+    "https://deno.land/x/evt@v2.3.1/lib/types/Operator.ts": "48de9fb581d798378bbfee58f3f43d461c79e4c4c015f72bb885627f1cf7fe65",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/EvtLikeToEvt.ts": "8374ddc8aaefca4e4fbdcb5e76a60552add5940ab7f2fc3eb58061a6b160c190",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/FactorizeEvt.ts": "cc2a2210a71e5a2d5fc66be1dccdaead2265bb46d5d82544b743e1c6f54c4018",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/SwapEvtType.ts": "c944d32056391c7dfdb8cbdc4f7406ffab3f0430282abc4961534aca36eb040d",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/ToNonPostableEvt.ts": "886aa16d9e22e44a9c59ae474e09e17523708f8800337cf8f6777e8697ad760e",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/ToPostableEvt.ts": "9bfb4c08fa7cc024026db3a7c1baf85c3a73292ecca615c488d6e420ba8b1237",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/UnpackCtx.ts": "efbd11b73b67c13bb337eba15660c4ac3674fb929083782b9716839bb030793a",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/UnpackEvt.ts": "94e2247280afb165f342e55671ab04409e107aab5d5707b0def711f1e980fecf",
+    "https://deno.land/x/evt@v2.3.1/lib/types/helper/index.ts": "76077c41f85641c0a92c6107a2d62e55591401a44df985f3aa9000b80ed5f5f9",
+    "https://deno.land/x/evt@v2.3.1/lib/types/index.ts": "08cdb0a44ba5484b12d041d67271f0350dd9a6c3bd843843b2bc62399f48f28d",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/Ctx.ts": "74ebb5d3bb0bc1b934c427e3c57ab124bc0c46f89d683f9925125dff82f5e1b7",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/CtxLike.ts": "73b8709ea358c56eb6a8fb09c22a9c85dfd4e90094fc6cf01278e2e4a378b5a4",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/Evt.ts": "884f7924179974a4e5e1f1978c043fdb2104bf651c07f3be5a049f864406d50c",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/EvtLike.ts": "cf294021dc16aee68637284d76fc33d3ce6428504c9489f91cba840b03e7f2e5",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/NonPostableEvt.ts": "4326c2e2883460ac111c90fa5b5803e0f1e1ae7e17ab99508d26b6db18a94bab",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/NonPostableEvtLike.ts": "ff32ade244c2e560a3b134ba0511f171ac0ae696ef7cedafa7c858563b559dd6",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/Postable.ts": "e66e7b8ed2124a49f0f25be9f8ea06e0777cc8425a425a75c8e1993dc30c147f",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/StatefulEvt.ts": "384499cf2d141f865f26e52d21c01268218dd2ffd97f99d21c565545abab56df",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/StatefulEvtLike.ts": "9f985cbf4ab3629fbee5f6abbf81b8366c9949b34d73147af2b61467995f704f",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/StatefulPostable.ts": "3e9d0ba438cd247c27fee88c4dcaad0deff42b753c9d0aeb78cb704a9f2e9fa7",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/StatefulReadonlyEvt.ts": "fb09392dcafbc9027310db3b8f0314d1d8cc906549caf50dcd8657bea06aba96",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/StatefulReadonlyEvtLike.ts": "2a80d93f2c866720a2b65641d6905b6700097ac67998c5a680167f91f425aeee",
+    "https://deno.land/x/evt@v2.3.1/lib/types/interfaces/index.ts": "d980826b51d368d4ef639e377944c8d9836c14836d52ce3ff0d4c0b712fb4c93",
+    "https://deno.land/x/evt@v2.3.1/lib/types/lib.dom.ts": "2b65508fc6e3f7cae953d94652c240ef6eb3569f7f82ff879a853ea91fa56c99",
+    "https://deno.land/x/evt@v2.3.1/lib/util/compose.ts": "7645218c4e7fb4e0570073f76ed9bb60b59c711f6602da13da92ee9be4121902",
+    "https://deno.land/x/evt@v2.3.1/lib/util/convertOperatorToStatelessFLambda.ts": "6613d1a68fe1cdda78cf2f2f33fbc5acfa6ac17b936fd9f9249ca4db3e429368",
+    "https://deno.land/x/evt@v2.3.1/lib/util/genericOperators/distinct.ts": "07b5f8c9275a58dd9339618c11c2e91223a5d33ecbf7f54763eef5cfcde97121",
+    "https://deno.land/x/evt@v2.3.1/lib/util/genericOperators/index.ts": "9cab9a215bd3007b137fadad37fab62860e23e533d10312c9a17904a5fa055af",
+    "https://deno.land/x/evt@v2.3.1/lib/util/genericOperators/nonNullable.ts": "c1d3dea4494c5b4bae37b83d1feea328b9c55dddbe21dbf08f0c66702a617e91",
+    "https://deno.land/x/evt@v2.3.1/lib/util/genericOperators/throttleTime.ts": "742c8bde694db3032335c21d9152a86c4fcbaad7e0052e2c6752c599ebad8bfd",
+    "https://deno.land/x/evt@v2.3.1/lib/util/genericOperators/to.ts": "465a525187031f70e655101952776f4926d8e35d1ad6503ee1bc49a4a6c8e647",
+    "https://deno.land/x/evt@v2.3.1/lib/util/index.ts": "c4d914d5b1caf9847ea858bf3fa9ee1320cc382765b922fd03ab4c3d2b6dca26",
+    "https://deno.land/x/evt@v2.3.1/mod.ts": "ad2c53a9eb0535824d04d121b66ae8e97650885cdb8833ccf5670f1c8f742f03",
+    "https://deno.land/x/evt@v2.3.1/tools/Deferred.ts": "4428c43d644bdb2a864d7335dce3d4ab5815d8a73785764b29cdc4da5d40f723",
+    "https://deno.land/x/evt@v2.3.1/tools/safeSetTimeout.ts": "6e8fae967d49fbe2786acd10c5ab5cc0acc3305febd89445ce9f70e674038a40",
+    "https://deno.land/x/evt@v2.5.7/lib/Ctx.ts": "a44eff6c0361a12989bf454e4e24ce3e8f33e8ae20c5ef4de43f192f2e88aa30",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.asNonPostable.ts": "0c518f68e873a7912a2c3225f5427cb64085dae6b1a9ad0aa8f677232fd93b98",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.asPostable.ts": "fbd8bbe300a69da44cec8579ea1992c287d7bcc6fe4f4e06f2585b1ef0551090",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.asyncPipe.ts": "aa8541a84dc76289fc746a5697949b24b6a96de9b99a30df042ffbcc4567f3aa",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.create.ts": "8789cf94d143f208ea7b26071e37b862b435b422da2e28a697732a8260998c2c",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.factorize.ts": "ed4173ea2b41e187700cd4dbd3e040763a170dfa0530cb6200b5723120b0c7ec",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.from.ts": "57ff1ac2a9541932f51cd643c9c635ddf0082c964d57fd26cc01f52660bf61a0",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.getCtx.ts": "6c6b7372e32bc6188e4c9ab16fdbba1a8c469d493df20c7ecc0aa92382b95585",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.loosenType.ts": "b2c136fbcb9ff9f478082247dbc0f2afda5a8ca35ebfdb013673add96d7d98e5",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.merge.ts": "0bab6663ea756e929a9f5b7bf1c5c957da00d5b2355f8355b1276c3016654edf",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.newCtx.ts": "bd44ec7e092915b7b32a1e5d8491c0894749624a2b17e1d41c0af39de73abb90",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.parsePropsFromArgs.ts": "e0dea69d612f34141d7c2573f071872536d6894769f92d695b738e5c23c066a3",
+    "https://deno.land/x/evt@v2.5.7/lib/Evt.ts": "dcc3ae2dc67dcafd39635a4f4e1f5e93ade53e92e230af37ea3307757f9876c2",
+    "https://deno.land/x/evt@v2.5.7/lib/LazyEvt.ts": "b5fe30b1cb923d225f89467b0903ded44f648097289b3491184f67977ea8a174",
+    "https://deno.land/x/evt@v2.5.7/lib/LazyStatefulEvt.ts": "96a19c0faef503f43966d690fdafcc96e3b68caa3f5616bc1c64659f65d04509",
+    "https://deno.land/x/evt@v2.5.7/lib/StatefulEvt.ts": "7f25717793eb9793e483a2f93e1fb6401144af32886ae1204b163cacd7201748",
+    "https://deno.land/x/evt@v2.5.7/lib/importProxy.ts": "7b252cd136ab26da2661ea6525ec15612b5894c6f141456246ee6da3b42f4361",
+    "https://deno.land/x/evt@v2.5.7/lib/index.ts": "c338e1d107b5afe81439d3b047362dade4059c792af581c7e5675d28a3da37f3",
+    "https://deno.land/x/evt@v2.5.7/lib/types/AsyncIterableEvt.ts": "5fd9a5465340547d8e4e40322675a85fbf0c1661d3ea85cc0bd57e2344c0d988",
+    "https://deno.land/x/evt@v2.5.7/lib/types/EventTargetLike.ts": "eba4e6198baf33bae89c989c323b42bd6388fbfec381619d90cf292eae5b95e8",
+    "https://deno.land/x/evt@v2.5.7/lib/types/EvtError.ts": "719ccce37e3b6cf2f79b6d0017e4ecb325ee4ba614d1cc2f6807d48ac7046784",
+    "https://deno.land/x/evt@v2.5.7/lib/types/Handler.ts": "1a83da88f68e5239db7cf90489d9e061912a88c2b80f7dfe98526f27a8dc4727",
+    "https://deno.land/x/evt@v2.5.7/lib/types/Observer.ts": "f0f2c4498bd49558d4f5df981ee4ae2aada687de5cd150e39b06798bf3d23ac0",
+    "https://deno.land/x/evt@v2.5.7/lib/types/Operator.ts": "48de9fb581d798378bbfee58f3f43d461c79e4c4c015f72bb885627f1cf7fe65",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/EvtLikeToEvt.ts": "8374ddc8aaefca4e4fbdcb5e76a60552add5940ab7f2fc3eb58061a6b160c190",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/FactorizeEvt.ts": "cc2a2210a71e5a2d5fc66be1dccdaead2265bb46d5d82544b743e1c6f54c4018",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/SwapEvtType.ts": "c944d32056391c7dfdb8cbdc4f7406ffab3f0430282abc4961534aca36eb040d",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/ToNonPostableEvt.ts": "886aa16d9e22e44a9c59ae474e09e17523708f8800337cf8f6777e8697ad760e",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/ToPostableEvt.ts": "9bfb4c08fa7cc024026db3a7c1baf85c3a73292ecca615c488d6e420ba8b1237",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/UnpackCtx.ts": "efbd11b73b67c13bb337eba15660c4ac3674fb929083782b9716839bb030793a",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/UnpackEvt.ts": "94e2247280afb165f342e55671ab04409e107aab5d5707b0def711f1e980fecf",
+    "https://deno.land/x/evt@v2.5.7/lib/types/helper/index.ts": "76077c41f85641c0a92c6107a2d62e55591401a44df985f3aa9000b80ed5f5f9",
+    "https://deno.land/x/evt@v2.5.7/lib/types/index.ts": "08cdb0a44ba5484b12d041d67271f0350dd9a6c3bd843843b2bc62399f48f28d",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/Ctx.ts": "74ebb5d3bb0bc1b934c427e3c57ab124bc0c46f89d683f9925125dff82f5e1b7",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/CtxLike.ts": "3ebf4281fe5c559cda6c2b5a80fc2755385295316549201d19db2ca116d2f6d3",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/Evt.ts": "884f7924179974a4e5e1f1978c043fdb2104bf651c07f3be5a049f864406d50c",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/EvtLike.ts": "cf294021dc16aee68637284d76fc33d3ce6428504c9489f91cba840b03e7f2e5",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/NonPostableEvt.ts": "4326c2e2883460ac111c90fa5b5803e0f1e1ae7e17ab99508d26b6db18a94bab",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/NonPostableEvtLike.ts": "ff32ade244c2e560a3b134ba0511f171ac0ae696ef7cedafa7c858563b559dd6",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/Postable.ts": "e66e7b8ed2124a49f0f25be9f8ea06e0777cc8425a425a75c8e1993dc30c147f",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/StatefulEvt.ts": "384499cf2d141f865f26e52d21c01268218dd2ffd97f99d21c565545abab56df",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/StatefulEvtLike.ts": "9f985cbf4ab3629fbee5f6abbf81b8366c9949b34d73147af2b61467995f704f",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/StatefulPostable.ts": "3e9d0ba438cd247c27fee88c4dcaad0deff42b753c9d0aeb78cb704a9f2e9fa7",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/StatefulReadonlyEvt.ts": "fb09392dcafbc9027310db3b8f0314d1d8cc906549caf50dcd8657bea06aba96",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/StatefulReadonlyEvtLike.ts": "2a80d93f2c866720a2b65641d6905b6700097ac67998c5a680167f91f425aeee",
+    "https://deno.land/x/evt@v2.5.7/lib/types/interfaces/index.ts": "d980826b51d368d4ef639e377944c8d9836c14836d52ce3ff0d4c0b712fb4c93",
+    "https://deno.land/x/evt@v2.5.7/lib/types/lib.dom.ts": "2b65508fc6e3f7cae953d94652c240ef6eb3569f7f82ff879a853ea91fa56c99",
+    "https://deno.land/x/evt@v2.5.7/lib/util/compose.ts": "04630465b0de55518fd7c4e7a6339125f16f52f1819786b49b24402a5bffe553",
+    "https://deno.land/x/evt@v2.5.7/lib/util/convertOperatorToStatelessFLambda.ts": "6613d1a68fe1cdda78cf2f2f33fbc5acfa6ac17b936fd9f9249ca4db3e429368",
+    "https://deno.land/x/evt@v2.5.7/lib/util/index.ts": "3936abbe0133f57956153d61499d2836f67a02c457e1d85e7bacd3ea98bfcda6",
+    "https://deno.land/x/evt@v2.5.7/mod.ts": "ad2c53a9eb0535824d04d121b66ae8e97650885cdb8833ccf5670f1c8f742f03",
+    "https://deno.land/x/evt@v2.5.7/operators/distinct.ts": "fa7b892608b05de55867d7dcbfb896636a176579366d4a0e7bbb4504ac273d7d",
+    "https://deno.land/x/evt@v2.5.7/operators/nonNullable.ts": "75ed76527e68bc4a6371138da975dbacf913cbb33abdf6218784d3b20eed57bc",
+    "https://deno.land/x/evt@v2.5.7/operators/throttleTime.ts": "4c88d0e464f98d2b1553af4e6fee9e14668d1f8672e0145a4ef973a44fbdd7b1",
+    "https://deno.land/x/evt@v2.5.7/operators/to.ts": "64f74f694398728184457e3476e60df41802771c462f0e0a90f6bbbbb4bfd6d7",
+    "https://deno.land/x/evt@v2.5.7/tools/Deferred.ts": "168a2a6fc9a97ced4c9f70c4e5b60afedfd4c559e873a9490b4ed7b1c66f261a",
+    "https://deno.land/x/evt@v2.5.7/tools/minimal-polyfills/LightMap.ts": "0d3b3e4612a3e76ddce0f3ec2ddefab10771ff385257e9ca35635ce6109a5049",
+    "https://deno.land/x/evt@v2.5.7/tools/safeSetTimeout.ts": "6e8fae967d49fbe2786acd10c5ab5cc0acc3305febd89445ce9f70e674038a40",
+    "https://deno.land/x/run_exclusive@v2.2.19/lib/runExclusive.ts": "07c0a6e397d422eaafd05de11357652e1a259242f4a1fdffd2a84b7de24d4d9d",
+    "https://deno.land/x/run_exclusive@v2.2.19/mod.ts": "7d124c8d09f74c46a56b7397c2ca3731a1cc9c5dc45469b8522badf17eb523e1",
+    "https://deno.land/x/tsafe@v1.6.6/Equals.ts": "3890f89007eaa5a7c9ff4105fed68ebc33255bb26b0c3bd313a8b3f023c7f684",
+    "https://deno.land/x/tsafe@v1.6.6/assert.ts": "096d303459a1118f4f3ae1a9e630619e6626c7001f6c2b8e23a5b0dd2f97a174",
+    "https://deno.land/x/tsafe@v1.6.6/id.ts": "cb2b74bfed19553b90e37af353c58c53ee113af1406c580ab0b7a4b44aa9b022",
+    "https://deno.land/x/tsafe@v1.6.6/is.ts": "3f929f3bfaef98835ea02dc66a8d6a77e2784dc9d3d85e76902b6f19ea531ba6",
+    "https://deno.land/x/tsafe@v1.6.6/isPromiseLike.ts": "7359a7bd156fb7263f17b59477e22e61c26d646d27f7df3a70a408a43033a2f3",
+    "https://deno.land/x/tsafe@v1.6.6/lab/PromiseOrNot.ts": "ab46309b639fb01d162488e25afc36bf4a8da3ab37f09a6dc70c733a5b9829ba",
+    "https://deno.land/x/tsafe@v1.6.6/lab/overwriteReadonlyProp.ts": "8d232c0ea94583198bffd903644c203b3acc01768417923a9d9750a194071cc2",
+    "https://deno.land/x/tsafe@v1.6.6/tools/StrictEquals.ts": "cee511e986619497af00106cfc033afa9cb907657eae7d216aa6685cfd91a7e4",
+    "https://deno.land/x/tsafe@v1.6.6/tools/Unite.ts": "f6b19500d5de61452d537a4a495cfae224ff97de8b2afa9b156a14e261d9dc45",
+    "https://deno.land/x/tsafe@v1.6.6/typeGuard.ts": "8012ea9591da5ff83fa43d1a42c9911736b0f841726bc88a07deb53ae717f41b",
+    "https://deno.land/x/tsafe@v1.6.6/zz_internal/assertIsRefWrapper.ts": "1c16beff4730820044f9d18dfd7c703ec626e0b751b75d884a344a12287c85f3",
+    "https://raw.githubusercontent.com/garronej/minimal_polyfills/v2.2.1/deno_dist/Array.prototype.find.ts": "54a1866655066ecb8604efb60c85fe0d77d19783eefe3f9da9aa7b378d1a48b3",
+    "https://raw.githubusercontent.com/garronej/minimal_polyfills/v2.2.1/deno_dist/Map.ts": "23e7bae86df110ad8a68097750530f288c5117fe4c4b30e645b449d20fe156a5",
+    "https://raw.githubusercontent.com/garronej/minimal_polyfills/v2.2.1/deno_dist/Object.is.ts": "2ee475125e2a79cbcd09a6743dda5809e23a8f75aee5472c02959aaf4a447254",
+    "https://raw.githubusercontent.com/garronej/minimal_polyfills/v2.2.1/deno_dist/Set.ts": "3e1160a043d4d473fdc8e9533f9d4163423a3f8eb018ae3cd5cc15daf4976bdf",
+    "https://raw.githubusercontent.com/garronej/minimal_polyfills/v2.2.1/deno_dist/WeakMap.ts": "3b0cb6ab1348897b5e107e932f53213e1459e9759db0c5eea5d01eb9bd3e0ddb",
+    "https://raw.githubusercontent.com/garronej/run_exclusive/v2.2.16/deno_dist/lib/runExclusive.ts": "645337346cf8e0d31e3b2fd55ed13465d2898c74632be7e5e5dc7e9480b2db46",
+    "https://raw.githubusercontent.com/garronej/run_exclusive/v2.2.16/deno_dist/mod.ts": "7d124c8d09f74c46a56b7397c2ca3731a1cc9c5dc45469b8522badf17eb523e1",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/assert.ts": "01e290bea472f363d380bdb172b115ee7a31c103d72548e150d2a35b04276fe2",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/id.ts": "cb2b74bfed19553b90e37af353c58c53ee113af1406c580ab0b7a4b44aa9b022",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/is.ts": "3f929f3bfaef98835ea02dc66a8d6a77e2784dc9d3d85e76902b6f19ea531ba6",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/isPromiseLike.ts": "e190c6b9806e815d3a096c9af16028a848edd13b70b6e3d9e44ce2507089f17a",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/lab/PromiseOrNot.ts": "ab46309b639fb01d162488e25afc36bf4a8da3ab37f09a6dc70c733a5b9829ba",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/lab/overwriteReadonlyProp.ts": "05a84a536fe32b94c68f6e0a917d68b75698a8b386cd0f2f1d44df0ac09463b2",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/typeGuard.ts": "8012ea9591da5ff83fa43d1a42c9911736b0f841726bc88a07deb53ae717f41b",
+    "https://raw.githubusercontent.com/garronej/tsafe/v0.10.1/deno_dist/zz_internal/assertIsRefWrapper.ts": "1c16beff4730820044f9d18dfd7c703ec626e0b751b75d884a344a12287c85f3"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "npm:axios@^1.7.7",
+      "npm:cheerio@1"
+    ]
+  }
+}
