@@ -1,4 +1,6 @@
-docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=Pass.Word! -e MYSQL_DATABASE=tides -e MYSQL_USER=admin -e MYSQL_PASSWORD=Pass.Word! -v mysql_data:/var/lib/mysql -p 3306:3306 -d mysql:latest
+docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=Pass.Word! -e MYSQL_DATABASE=tides -e
+MYSQL_USER=admin -e MYSQL_PASSWORD=Pass.Word! -v mysql_data:/var/lib/mysql -p 3306:3306 -d
+mysql:latest
 
 # 1. Connect to MySQL
 
@@ -10,14 +12,10 @@ USE your_database_name;
 
 # 3. Create the table
 
-CREATE TABLE tide_log (
-date DATE,
-basicTide JSON,
-preciseTide JSON
+CREATE TABLE tide_log ( date DATE, weather JSON, basicTide JSON, preciseTide JSON, poolsExposed JSON
 );
 
-ALTER TABLE tide_log
-ADD CONSTRAINT unique_date_constraint UNIQUE (date);
+ALTER TABLE tide_log ADD CONSTRAINT unique_date_constraint UNIQUE (date);
 
 # 4. Verify the table was created
 

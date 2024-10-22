@@ -1,4 +1,4 @@
-import { API_CONFIG } from "@client/services/config.ts";
+import { API_CONFIG } from '@client/services/config.ts';
 
 class ApiService {
   private baseUrl: string;
@@ -41,7 +41,12 @@ class ApiService {
   get<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
     return this.fetchApi<T>(endpoint, {
       ...options,
-      method: "GET",
+      method: 'GET',
     });
   }
 }
+
+export const apiService = new ApiService(
+  API_CONFIG.baseUrl,
+  API_CONFIG.headers
+);
