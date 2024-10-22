@@ -16,6 +16,9 @@ basicTide JSON,
 preciseTide JSON
 );
 
+ALTER TABLE tide_log
+ADD CONSTRAINT unique_date_constraint UNIQUE (date);
+
 # 4. Verify the table was created
 
 SHOW TABLES;
