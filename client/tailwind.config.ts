@@ -1,8 +1,8 @@
-import { Config } from "tailwindcss";
+import { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
+    '{routes,islands,components}/**/*.{ts,tsx,js,jsx}',
   ],
   theme: {
     extend: {},

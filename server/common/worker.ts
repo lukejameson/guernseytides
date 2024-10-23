@@ -11,12 +11,13 @@ export async function scrapeDataForDate(date: string): Promise<void> {
   const year = getYear(date);
   const yearDay = getDayOfYear(date);
 
-  const tidesResponse = await getWebContent(`https://tides.digimap.gg/?year=${year}}&yearDay=${yearDay}`);
+  const tidesResponse = await getWebContent(
+    `https://tides.digimap.gg/?year=${year}}&yearDay=${yearDay}`,
+  );
   const weatherResponse = await getWeather(date);
   const parsedDocument = parseHtml(tidesResponse);
   const basicTideData = getBasicTidesTable(parsedDocument);
   const precisionTideData = getExtendedTideTimes(parsedDocument);
-
 
   const tideData: TideData = {
     Date: new Date(date),

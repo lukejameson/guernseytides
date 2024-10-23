@@ -1,5 +1,5 @@
 // components/WaveSpinner.tsx
-import { JSX } from "preact";
+import { JSX } from 'preact';
 
 interface WaveSpinnerProps {
   size?: number;
@@ -10,9 +10,9 @@ interface WaveSpinnerProps {
 
 export default function WaveSpinner({
   size = 50,
-  primaryColor = "#3498db",
-  secondaryColor = "#2980b9",
-  tertiaryColor = "#1f618d",
+  primaryColor = '#3498db',
+  secondaryColor = '#2980b9',
+  tertiaryColor = '#1f618d',
 }: WaveSpinnerProps): JSX.Element {
   const styles = `
     .wave-spinner {
@@ -65,10 +65,10 @@ export default function WaveSpinner({
   return (
     <div>
       <style dangerouslySetInnerHTML={{ __html: styles }} />
-      <div class="wave-spinner">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+      <div class='wave-spinner'>
+        <div class='wave'></div>
+        <div class='wave'></div>
+        <div class='wave'></div>
       </div>
     </div>
   );

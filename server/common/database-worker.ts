@@ -46,7 +46,12 @@ export async function insertTideData(tideData: TideData) {
                         ?
                     )
         `,
-      [formattedDate, JSON.stringify(tideData.Weather), JSON.stringify(tideData.BasicTide), JSON.stringify(tideData.PreciseTide)],
+      [
+        formattedDate,
+        JSON.stringify(tideData.Weather),
+        JSON.stringify(tideData.BasicTide),
+        JSON.stringify(tideData.PreciseTide),
+      ],
     );
 
     console.log('Data inserted successfully');

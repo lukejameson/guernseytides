@@ -1,9 +1,9 @@
-import { apiService } from '@client/services/api.service.ts';
-import { useEffect, useState } from 'preact/hooks';
-import { addDays, differenceInMilliseconds, format, parseISO, subDays } from 'date-fns';
-import CollapsibleSection from '@client/islands/CollapsibleSection.tsx';
-import { TideSequenceService } from '../services/tide-sequence.service.ts';
 import WaveSpinner from '@client/components/WaveSpinner.tsx';
+import CollapsibleSection from '@client/islands/CollapsibleSection.tsx';
+import { apiService } from '@client/services/api.service.ts';
+import { addDays, differenceInMilliseconds, format, parseISO, subDays } from 'date-fns';
+import { useEffect, useState } from 'preact/hooks';
+import { TideSequenceService } from '../services/tide-sequence.service.ts';
 
 interface TideProps {
   date: string;
@@ -112,10 +112,13 @@ export default function TideButton(props: TideProps) {
   const formatWeather = (weather: HourlyWeather[]) => {
     if (!weather) return 'No Weather data';
 
-    const latest = weather.find((x) => x.date == findClosestDate(weather.map((x) => x.date)));
+    const latest = weather.find((x) => {
+      return x.date == findClosestDate(weather.map((x) => x.date));
+    });
 
     return (
       <div class='grid gird-cols-2 gap-2 text-sm'>
+        <div>Time: {format(latest!.date, 'HH:mm')}</div>
         <div>Temp: {Math.round(latest!.temperature * 100) / 100}°C</div>
         <div>Humidity: {latest?.relativeHumidity}%</div>
         <div>
@@ -197,7 +200,9 @@ export default function TideButton(props: TideProps) {
             {extremes.cycles.map((extreme, index) => (
               <div key={index} class='text-sm py-1'>
                 <p>Tide Cycle {index + 1}</p>
-                <p>Times: {extreme.startTime} - {extreme.endTime}</p>
+                <p>
+                  Times: {extreme.startTime} - {extreme.endTime}
+                </p>
               </div>
             ))}
           </div>
@@ -234,14 +239,10 @@ export default function TideButton(props: TideProps) {
         </button>
       </div>
 
-      {error && (
-        <div class='p-4 bg-red-100 text-red-700 rounded'>
-          {error}
-        </div>
-      )}
+      {error && <div class='p-4 bg-red-100 text-red-700 rounded'>{error}</div>}
 
       {loading && (
-        <div class="flex justify-center gap-2">
+        <div class='flex justify-center gap-2'>
           <WaveSpinner />
         </div>
       )}
@@ -251,9 +252,7 @@ export default function TideButton(props: TideProps) {
           {tides.map((tide, index) => (
             <div key={index} class='p-4 border rounded-lg bg-white shadow-sm'>
               <div class='space-y-4'>
-                <h3 class='font-semibold text-lg'>
-                  {formatDate(tide.Date)}
-                </h3>
+                <h3 class='font-semibold text-lg'>{formatDate(tide.Date)}</h3>
 
                 <div class='space-y-2'>
                   <div class='bg-gray-50 p-3 rounded'>

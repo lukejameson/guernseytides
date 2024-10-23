@@ -48,5 +48,5 @@ class ApiService {
 
 export const apiService = new ApiService(
   API_CONFIG.baseUrl,
-  API_CONFIG.headers
+  API_CONFIG.headers,
 );
