@@ -6,4 +6,5 @@ export interface HourlyWeather {
   visibility: number;
   windSpeed10m: number;
   windDirection10m: number;
+  weather_code: number
 }

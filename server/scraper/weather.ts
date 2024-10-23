@@ -12,6 +12,7 @@ export async function getWeather(date: string): Promise<HourlyWeather[]> {
       'visibility',
       'wind_speed_10m',
       'wind_direction_10m',
+      'weather_code'
     ],
     'timezone': 'Europe/London',
     'start_date': date,
@@ -39,6 +40,7 @@ export async function getWeather(date: string): Promise<HourlyWeather[]> {
       visibility: hourly.variables(3)!.valuesArray()!,
       windSpeed10m: hourly.variables(4)!.valuesArray()!,
       windDirection10m: hourly.variables(5)!.valuesArray()!,
+      weather_code: hourly.variables(6)!.valuesArray()!
     },
   };
 
@@ -53,6 +55,7 @@ export async function getWeather(date: string): Promise<HourlyWeather[]> {
       visibility: weatherData.hourly.visibility[i],
       windSpeed10m: weatherData.hourly.windSpeed10m[i],
       windDirection10m: weatherData.hourly.windDirection10m[i],
+      weather_code: weatherData.hourly.weather_code[i]
     });
   }
 

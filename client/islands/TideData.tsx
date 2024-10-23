@@ -19,10 +19,15 @@ export interface HourlyWeather {
   windDirection10m: number;
 }
 
+export interface TideRecords {
+  key: string;
+  value: string;
+}
+
 export interface TideData {
   Date: Date;
   Weather: HourlyWeather[];
-  BasicTide: Record<string, string>[] | null;
+  BasicTide: TideRecords[] | null;
   PrecisionTides: Record<string, string>[] | null;
 }
 
@@ -109,11 +114,41 @@ export default function TideButton(props: TideProps) {
     });
   };
 
+  const findClosestTime = (times: string[], date: string): string => {
+    const now = new Date();
+
+    return times.reduce((closest, current) => {
+      const currentDateTime = parseISO(`${date}T${current}`);
+      const closestDateTime = parseISO(`${date}T${closest}`);
+
+      const currentDiff = Math.abs(differenceInMilliseconds(now, currentDateTime));
+      const closestDiff = Math.abs(differenceInMilliseconds(now, closestDateTime));
+
+      return currentDiff < closestDiff ? current : closest;
+    });
+  };
+
+  const formatCurrentTideLevel = (tides: TideData | null) => {
+    if (!tides?.PrecisionTides) return 'Missing tide data';
+
+    const pTides = tides?.PrecisionTides;
+
+    const currentTideLevel = pTides.find((x) => {
+      return x.time == findClosestTime(pTides.map((y) => y.time), format(tides.Date, 'yyyy-MM-dd'));
+    });
+
+    return (
+      <div class='grid gird-cols-2 gap-2 text-sm'>
+        <div>{currentTideLevel?.height}m</div>
+      </div>
+    );
+  };
+
   const formatWeather = (weather: HourlyWeather[]) => {
     if (!weather) return 'No Weather data';
 
     const latest = weather.find((x) => {
-      return x.date == findClosestDate(weather.map((x) => x.date));
+      return x.date == findClosestDate(weather.map((y) => y.date));
     });
 
     return (
@@ -130,18 +165,16 @@ export default function TideButton(props: TideProps) {
     );
   };
 
-  const formatTideData = (tideData: Record<string, string>[] | null) => {
+  const formatTideData = (tideData: TideRecords[] | null) => {
     if (!tideData) return 'No tide data available';
 
+    console.log(tideData);
+
     return (
-      <div class='space-y-1'>
+      <div className='space-y-2'>
         {tideData.map((tide, index) => (
-          <div key={index} class='text-sm'>
-            {Object.values(tide).map((value, valueIndex) => (
-              <span key={valueIndex} class='mr-4'>
-                {value}
-              </span>
-            ))}
+          <div key={index} className='text-sm'>
+            {`${tide.key} tide is at ${tide.value}`}
           </div>
         ))}
       </div>
@@ -242,7 +275,7 @@ export default function TideButton(props: TideProps) {
       {error && <div class='p-4 bg-red-100 text-red-700 rounded'>{error}</div>}
 
       {loading && (
-        <div class='flex justify-center gap-2'>
+        <div class='flex justify-center gap-2 items-center" style="height: 600px"'>
           <WaveSpinner />
         </div>
       )}
@@ -258,6 +291,11 @@ export default function TideButton(props: TideProps) {
                   <div class='bg-gray-50 p-3 rounded'>
                     <h4 class='font-medium mb-2'>Tide Data</h4>
                     {formatTideData(tide.BasicTide)}
+                  </div>
+
+                  <div class='bg-gray-50 p-3 rounded'>
+                    <h4 class='font-medium mb-2'>Current Tide Height</h4>
+                    {formatCurrentTideLevel(tide)}
                   </div>
 
                   <div class='bg-gray-50 p-3 rounded'>
